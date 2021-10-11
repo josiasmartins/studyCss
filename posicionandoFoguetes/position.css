@@ -1,0 +1,65 @@
+/* .box {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 8px;
+} */
+
+main {
+    margin-top: 200px;
+    position: relative;
+}
+
+.box1 {
+    background-color: red;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 4; /* sem unidade nessa (z-index) */
+}
+
+.box2 {
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: blue;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 8;
+}
+
+
+/* flexbox */
+body {
+    height: 100vh; /* vai ocupar toda a view port */
+    margin: 0px;
+    display: flex;
+    align-items: center; /* alinha os elementos no centro */
+}
+
+.container {
+    width: 100vh;
+    display: flex;
+    /* flex-direction: column;  volta para a posição vertical */
+    justify-content: space-between;
+}
+
+.flexbox {
+    width: 250px;
+    height: 250px;
+    /* margin-bottom: 28px; */
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}

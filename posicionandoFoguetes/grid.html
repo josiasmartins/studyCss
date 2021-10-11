@@ -1,0 +1,43 @@
+<!-- grid -->
+<style>
+body {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:  /* define o tamanho da area do template */
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-rows: 30px 1fr 40px; /* deixa a linha flexivel  */
+    grid-template-columns: 1fr 80px;
+}
+
+header {
+    grid-area: header;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+main {
+    background-color: red;
+}
+
+aside {
+    background-color: blue;
+}
+
+footer {
+    grid-area: footer; 
+    background-color: gray;
+}
+</style>
+<header>
+    <div>Logo</div>
+    <div>Menu</div>
+</header>
+<main>Conteúdo</main>
+<aside>Infos adicionais</aside>
+<footer>Rodapé</footer>

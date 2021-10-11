@@ -1,0 +1,19 @@
+body {
+    display: grid;
+}
+
+header {
+    background-color: green;
+}
+
+main {
+    background-color: red;
+}
+
+aside {
+    background-color: blue;
+}
+
+footer {
+    background-color: gray;
+}
